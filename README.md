@@ -35,3 +35,17 @@ A clean, fast, and responsive note-taking web app built using **React**, **Vite*
 ```bash
 git clone https://github.com/your-username/noto-notesapp.git
 cd noto-notesapp
+
+```
+
+### 2.  Install dependencies
+
+```bash
+npm install
+```
+### 3. Development 
+
+ To start the development server:
+```bash
+
+npm run dev
