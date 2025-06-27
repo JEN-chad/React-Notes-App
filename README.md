@@ -1,12 +1,69 @@
-# React + Vite
+# 📝 Noto - A Minimal Notes App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean, fast, and responsive note-taking web app built using **React**, **Vite**, and **Tailwind CSS**.
 
-Currently, two official plugins are available:
+> This project uses Vite for lightning-fast development and React for UI rendering. Styled with Tailwind CSS and follows best practices with ESLint.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🧠 Add, pin, archive, and delete notes
+- 🎨 Beautiful UI with Tailwind CSS
+- ⚡ Lightning-fast development using Vite
+- 🔁 Hot Module Replacement (HMR)
+- ♻️ State management using `useReducer`
+- 🔍 Clean code with ESLint support
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [UUID](https://www.npmjs.com/package/uuid)
+- [ESLint](https://eslint.org/)
+- [Material Symbols](https://fonts.google.com/icons)
+
+## 📦 Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/noto-notesapp.git
+cd noto-notesapp
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+
+ Project Structure
+
+noto-notesapp/
+├── public/                  # Static files
+├── src/
+│   ├── components/          # Reusable components (e.g., NotesCard, Sidebar)
+│   ├── context/             # Context API for state management
+│   ├── pages/               # Different views (Home, Archive, Bin)
+│   ├── App.jsx              # Root component
+│   ├── main.jsx             # Entry point
+│   └── index.css            # Tailwind & global styles
+├── .eslintrc.cjs            # ESLint config
+├── tailwind.config.cjs      # Tailwind config
+├── vite.config.js           # Vite config
+└── package.json             # Project metadata
+Deployment
+Deploy using Netlify, Vercel, or GitHub Pages. For Netlify:
+
+Push your repo to GitHub
+
+Connect your repo to Netlify
+
+Set build command as npm run build
+
+Set publish directory as dist/
+
+✅ To Do
+ Add dark mode
+
+ Add tags/categories for notes
+
+ Sync with cloud (e.g., Firebase)
