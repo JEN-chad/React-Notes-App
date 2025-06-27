@@ -2,6 +2,7 @@ import Navbar from "../../components/Navbar";
 import Sidebar from "../../components/Sidebar";
 import { useNotes } from "../../context/notes-context";
 import NotesCard from "../../components/NotesCard";
+import { Footer } from "../../components/footer";
 const BinPage = () => {
   const { bin } = useNotes();
   console.log("📦 BinPage loaded");
@@ -9,9 +10,9 @@ const BinPage = () => {
   return (
     <>
       <Navbar />
-      <main className="flex gap-4">
+      <main className="flex pb-20 gap-4">
         <Sidebar />
-        <div className="flex flex-col w-screen mt-7">
+        <div className="flex flex-col w-full mt-7">
           <div className=" flex flex-wrap gap-7">
             {bin?.length > 0 &&
               bin.map(({ title, text, id, isPinned }) => {
@@ -28,6 +29,7 @@ const BinPage = () => {
           </div>
         </div>
       </main>
+      <Footer />
     </>
   );
 };

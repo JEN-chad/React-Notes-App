@@ -3,6 +3,7 @@ import Navbar from "../../components/Navbar";
 import Sidebar from "../../components/Sidebar";
 import { useNotes } from "../../context/notes-context";
 import NotesCard from "../../components/NotesCard";
+import { Footer } from "../../components/footer";
 
 export const ImportantPage = () => {
   const { impTitle, impText, reducerDispatch, impNotes } = useNotes();
@@ -30,9 +31,9 @@ export const ImportantPage = () => {
   return (
     <>
       <Navbar />
-      <main className="flex gap-4">
+      <main className="flex pb-20 gap-4">
         <Sidebar />
-        <div className="flex flex-col w-screen mt-7">
+        <div className="flex flex-col w-full mt-7">
           <div className="flex flex-col mt-5 w-[400px] relative border rounded-sm shadow-md self-center">
             <input
               value={impTitle}
@@ -79,6 +80,7 @@ export const ImportantPage = () => {
           </div>
         </div>
       </main>
+      <Footer />
     </>
   );
 };

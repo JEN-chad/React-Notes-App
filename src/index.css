@@ -4,8 +4,17 @@
 
 body {
   background-color: #f4f4f5;
+  overflow-x: hidden;
   box-sizing: border-box;
 }
+/* tailwind.css or index.css */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 
 .material-symbols {
   font-family: 'Material Symbols Outlined';
