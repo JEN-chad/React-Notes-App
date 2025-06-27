@@ -1,4 +1,5 @@
 import Navbar from "../../components/Navbar";
+import { Footer } from "../../components/footer";
 import Sidebar from "../../components/Sidebar";
 import NotesCard from "../../components/NotesCard";
 import { useNotes } from "../../context/notes-context";
@@ -34,11 +35,11 @@ export default function Home() {
   const unPinnedNotes =
     notes.length > 0 && notes.filter(({ isPinned }) => !isPinned);
   return (
-    <>
+    <div className="flex flex-col min-h-screen overflow-x-hidden">
       <Navbar />
-      <main className="flex gap-4">
+      <main className="flex pb-20 gap-4">
         <Sidebar />
-        <div className="flex flex-col w-screen mt-7">
+        <div className="flex flex-col w-full mt-7">
           <div className="flex flex-col mt-5 w-[400px] relative border rounded-sm shadow-md self-center">
             <input
               value={title}
@@ -110,6 +111,7 @@ export default function Home() {
           </div>
         </div>
       </main>
-    </>
+      <Footer />
+    </div>
   );
 }
