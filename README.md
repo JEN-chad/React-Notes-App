@@ -49,3 +49,45 @@ npm install
 ```bash
 
 npm run dev
+```
+### 4.  Project Structure
+
+```bash
+noto-notesapp/
+├── public/                  # Static files
+├── src/
+│   ├── components/          # Reusable components (e.g., NotesCard, Sidebar)
+│   ├── context/             # Context API for state management
+│   ├── pages/               # Different views (Home, Archive, Bin)
+│   ├── App.jsx              # Root component
+│   ├── main.jsx             # Entry point
+│   └── index.css            # Tailwind & global styles
+├── .eslintrc.cjs            # ESLint config
+├── tailwind.config.cjs      # Tailwind config
+├── vite.config.js           # Vite config
+└── package.json             # Project metadata
+
+```
+### 5. 🌐 Deployment
+You can deploy this app using Netlify, Vercel, or GitHub Pages.
+
+Deploy to Netlify:
+Push your repository to GitHub
+
+Go to Netlify and connect your GitHub repo
+
+Set the build command to:
+
+```bash
+npm run build
+```
+### 6. Set the publish directory to:
+```bash
+dist
+```
+### 7. ToDo
+ 1.Add dark mode
+
+ 2.Add tags/categories for notes
+
+ 3.Sync notes with cloud storage (e.g., Firebase)
