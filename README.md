@@ -24,7 +24,7 @@ A clean, fast, and responsive note-taking web app built using **React**, **Vite*
 
 ## 📦 Installation
 
-```bash
+
 # Clone the repository
 git clone https://github.com/your-username/noto-notesapp.git
 cd noto-notesapp
@@ -32,10 +32,11 @@ cd noto-notesapp
 # Install dependencies
 npm install
 
+🧪 Development
 # Start the development server
 npm run dev
 
- Project Structure
+🧱 Project Structure
 
 noto-notesapp/
 ├── public/                  # Static files
@@ -50,15 +51,14 @@ noto-notesapp/
 ├── tailwind.config.cjs      # Tailwind config
 ├── vite.config.js           # Vite config
 └── package.json             # Project metadata
-Deployment
+
+🌐 Deployment
 Deploy using Netlify, Vercel, or GitHub Pages. For Netlify:
 
 Push your repo to GitHub
-
 Connect your repo to Netlify
 
 Set build command as npm run build
-
 Set publish directory as dist/
 
 ✅ To Do
